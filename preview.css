@@ -65,8 +65,9 @@ figcaption { margin-top: 8px; font-size: .9rem; font-weight: bold; }
 .lab { background: var(--ink); padding-block: 40px; color: white; }
 .lab .split { background: #2d2c30; }
 .lab h3 { margin: 22px 0 12px; }
-.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.comparison .media { aspect-ratio: 3/1; background: #343338; color: #e6e1e0; border: 1px solid #6c696e; }
+.comparison { margin-top: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.comparison .media { aspect-ratio: 4/3; border: 1px solid #6c696e; }
+.lab-photo-source { margin-top: 12px; font-size: .87rem; }
 .footer { background: white; border-top: 1px solid var(--line); padding: 32px 0 22px; font-size: .9rem; }
 .footer-logo { margin-bottom: 24px; }
 .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr .7fr 1fr; gap: 20px; }
@@ -92,5 +93,4 @@ figcaption { margin-top: 8px; font-size: .9rem; font-weight: bold; }
   .footer-grid { gap: 20px 12px; }
   .split { grid-template-columns: minmax(0, 1fr); }
   .section, .band { padding-block: 30px; }
-  .comparison .media { aspect-ratio: 4/3; }
 }
