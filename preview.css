@@ -79,10 +79,17 @@ figcaption { margin-top: 8px; font-size: .9rem; font-weight: bold; }
 .footer summary { cursor: pointer; }
 .footer-meta { display: flex; flex-wrap: wrap; gap: 8px 20px; border-top: 1px solid var(--line); padding-top: 14px; margin-top: 24px; color: var(--muted); font-size: .82rem; }
 @media (max-width: 760px) {
-  .nav { display: block; padding-bottom: 4px; }
+  .nav { display: block; padding-bottom: 12px; }
   .logo img { height: 52px; }
-  .navlinks { column-gap: 13px; }
-  .navlinks a { font-size: .72rem; min-height: 44px; }
+  .navlinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 8px; }
+  .navlinks a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 6px 9px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+  }
   .wrap, .nav { width: calc(100% - 32px); }
   .hero-slide { grid-template-columns: minmax(0, 1fr); min-height: 0; }
   .hero-content { padding: 28px 16px 18px; }
